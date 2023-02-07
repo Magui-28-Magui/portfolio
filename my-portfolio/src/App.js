@@ -1,10 +1,13 @@
+import React from 'react'
+import Home from './contents/Home'
+import Navbar from './components/Navbar';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <Home />
+    </>
+  )
 }
-
-export default App;
+export default App
