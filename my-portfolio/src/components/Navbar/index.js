@@ -1,20 +1,32 @@
 import React from 'react'
-import {PrimaryNav, MenuLink, Menu, Hamburger, GetInTouch} from './styles';
+import {PrimaryNav, MenuLink, Menu, Hamburger, GetInTouch, ImageNavbar, GetInTouchText} from './styles';
+import ImageLogo from "./../../assets/img/logo-m-3d.png";
 
 const Navbar = () => {
     return (
         <>
             <PrimaryNav>
+                <ImageNavbar src={ImageLogo} alt="logo" />
                 <Hamburger />
                 <Menu>
                     <MenuLink>
-                        HOME
+                        Home
                     </MenuLink>
                     <MenuLink>
-                        HOME
+                        About me
+                    </MenuLink>
+                    <MenuLink>
+                        Services 
+                    </MenuLink>
+                    <MenuLink>
+                        Projects 
                     </MenuLink>
                 </Menu>
-                <GetInTouch>Get in Touch</GetInTouch>
+                <GetInTouch>
+                    <GetInTouchText>
+                        Get in Touch
+                    </GetInTouchText>
+                </GetInTouch>
             </PrimaryNav>
         </>
     )
