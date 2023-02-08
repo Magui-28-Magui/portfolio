@@ -1,5 +1,5 @@
 import React from 'react'
-import {PrimaryNav, MenuLink, Menu, Hamburger} from './styles';
+import {PrimaryNav, MenuLink, Menu, Hamburger, GetInTouch} from './styles';
 
 const Navbar = () => {
     return (
@@ -10,7 +10,11 @@ const Navbar = () => {
                     <MenuLink>
                         HOME
                     </MenuLink>
+                    <MenuLink>
+                        HOME
+                    </MenuLink>
                 </Menu>
+                <GetInTouch>Get in Touch</GetInTouch>
             </PrimaryNav>
         </>
     )

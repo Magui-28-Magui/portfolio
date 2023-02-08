@@ -1,13 +1,12 @@
-import {FaBars} from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
 export const PrimaryNav = styled.nav`
   z-index: 14;
   height: 90px;
   display: flex;
   justify-content: space-between;
-  padding: 0.18rem calc((100vw - 1000px) / 2);
+//  padding: 0.18rem calc((100vw - 1000px) / 2);
   border-bottom: 0.2rem solid #000;
 `
 export const MenuLink = styled.li`
@@ -22,6 +21,19 @@ export const MenuLink = styled.li`
     color: #000000;
   }
 `
+export const GetInTouch = styled.div`
+  color: #ffffff;
+  border: 0.2rem solid #000000;
+  width: 20rem;
+  padding: 0;
+  margin:0;
+  background-color: #000000;
+  &.hover{
+        background-color: #ffffff;
+        color: #000000;
+    }
+  `
+
 export const Hamburger = styled(FaBars)`
   display: none;
   color: #ffffff;
